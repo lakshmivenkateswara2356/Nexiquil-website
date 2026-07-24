@@ -1,0 +1,34 @@
+.footer {
+  padding: 48px 32px;
+}
+
+.footer__top {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 24px;
+  align-items: center;
+}
+
+.footer__top h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.footer__top p {
+  margin: 8px 0 0;
+  color: rgba(255,255,255,0.85);
+  max-width: 460px;
+}
+
+.footer__bottom {
+  margin-top: 24px;
+  text-align: center;
+  color: rgba(255,255,255,0.75);
+}
+
+@media (max-width: 780px) {
+  .footer__top {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
