@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <div className="container">
+    <div className="container" style={{marginBottom: 199}}>
       <h1>About Nexiquill</h1>
       <p>
         Nexiquill builds intelligent software, AI-powered solutions and innovative

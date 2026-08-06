@@ -152,13 +152,14 @@
 
 .directors-wrapper {
   display: grid;
-  gap: 16px;
+  gap: 1px;
 }
 
 .directors-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
+  
 }
 
 .cta-panel {

@@ -4,6 +4,10 @@ import ProductCard from '../../components/ProductCard/ProductCard'
 import DirectorCard from '../../components/DirectorCard/DirectorCard'
 import '../../pages/Home/Home.scss'
 
+import Vasuimg from "../../assets/images/vasu.jpeg"
+import Nar from "../../assets/images/nar.jpeg"
+import Lokesh from "../../assets/images/lokesh.jpeg"
+
 const services = [
   { title: 'Software Development', description: 'Build intelligent applications with modern architecture.' },
   { title: 'AI & Machine Learning', description: 'Create predictive models and automation at scale.' },
@@ -23,9 +27,9 @@ const products = [
 ]
 
 const directors = [
-  { image: '/images/team1.jpg', name: 'Lokesh Yedida', role: 'Founder & CEO' },
-  { image: '/images/team2.jpg', name: 'Venkata Sai Krishna', role: 'Co-Founder & CTO' },
-  { image: '/images/team3.jpg', name: 'Chandu Yedida', role: 'COO' },
+  { image: Lokesh, name: 'Lokesh', role: 'Founder & CEO' },
+  { image: Nar, name: 'Narayana Rao', role: 'Co-Founder & CTO' },
+  { image:  Vasuimg, name: 'Vasu', role: 'COO' },
 ]
 
 const Home = () => {
@@ -33,19 +37,7 @@ const Home = () => {
     <div>
       <Hero />
       <div className="container">
-        <section className="home-section">
-          <div className="section-heading">
-            <span>Trusted by forward-thinking companies</span>
-            <h2>Where Innovation Meets Impact</h2>
-            <p>This is where smart technology and business goals come together to build solutions that drive growth and long-term success.</p>
-          </div>
-          <div className="trusted-logos">
-            <img src="/icons/microsoft.svg" alt="Microsoft" />
-            <img src="/icons/google.svg" alt="Google" />
-            <img src="/icons/aws.svg" alt="AWS" />
-            <img src="/icons/oracle.svg" alt="Oracle" />
-          </div>
-        </section>
+        
 
         <section className="home-section">
           <div className="section-heading">
@@ -83,17 +75,17 @@ const Home = () => {
           </div>
         </section>
 
-        <section className="home-section directors-wrapper">
+        {/* <section className="home-section directors-wrapper">
           <div className="section-heading">
             <h2>Our Directors</h2>
             <p>Leadership with vision, technical expertise, and a focus on delivering measurable impact.</p>
           </div>
           <div className="directors-grid">
             {directors.map((director) => (
-              <DirectorCard key={director.name} {...director} />
+              <DirectorCard style={{ marginBottom: '1px',width: '100%' }} key={director.name} {...director} />
             ))}
           </div>
-        </section>
+        </section> */}
 
         <section className="home-section cta-panel">
           <h2>Start your digital transformation journey today</h2>

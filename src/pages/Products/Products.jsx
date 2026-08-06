@@ -8,7 +8,7 @@ const Products = () => {
   ]
 
   return (
-    <div className="container">
+    <div className="container" style={{marginBottom: 199}}>
       <h1>Our Products</h1>
       <div style={{display:'grid', gridTemplateColumns:'repeat(3,1fr)', gap:18, marginTop:18}}>
         {products.map((p) => (
